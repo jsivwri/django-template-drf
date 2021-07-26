@@ -1,5 +1,5 @@
-# My Django Default Setup (no DRF)
-## built from Will Vincent's excellent *Django for Professionals*
+# My Django Default Setup (with DRF)
+## built from Will Vincent's excellent *Django for Professionals* and *Django for APIs*
 
 Save around 3 hours of set up...
 

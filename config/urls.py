@@ -25,6 +25,9 @@ urlpatterns = [
     # User management
     path('accounts/', include('allauth.urls')),
 
+    # Api
+    path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
+
     # Local apps
     path('', include('pages.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

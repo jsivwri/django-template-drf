@@ -11,6 +11,9 @@ Save around 3 hours of set up...
 - Email backed (smtp)
 - Pages app configured for serving stand pages
 - Essential security features set
+- *Django Rest Framework*
+- Django *CORs Headers* and *Rest Auth*
+
 
 ### Setup: 
 * clone
@@ -86,8 +89,14 @@ volumes:
   postgres_data:
   ```
 
-  ### Deploy:
+### Build
+`docker-compose up -d --build`
+
+### Exec
+`docker-compose web exec pipenv ...`
+
+### Deploy:
   ---
 
-  ### Notes:
+### Notes:
   ---

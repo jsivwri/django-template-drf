@@ -42,6 +42,12 @@ services:
         - "DJANGO_SECRET_KEY=---------"
         - "DJANGO_DEBUG=True"
         - "EMAIL_HOST_PASSWORD=---------"
+        - "DJANGO_SECURE_SSL_REDIRECT=False"
+        - "DJANGO_SECURE_HSTS_SECONDS=0"
+        - "DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=False" 
+        - "DJANGO_SECURE_HSTS_PRELOAD=False"
+        - “DJANGO_SESSION_COOKIE_SECURE=False"
+        - "DJANGO_CSRF_COOKIE_SECURE=False"
   db:
     image: postgres:11
     volumes:
@@ -71,12 +77,6 @@ services:
     environment: 
         - "DJANGO_SECRET_KEY=-------"
         - "EMAIL_HOST_PASSWORD=-------"
-        - "DJANGO_SECURE_SSL_REDIRECT=False"
-        - "DJANGO_SECURE_HSTS_SECONDS=0"
-        - "DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=False" 
-        - "DJANGO_SECURE_HSTS_PRELOAD=False"
-        - “DJANGO_SESSION_COOKIE_SECURE=False"
-        - "DJANGO_CSRF_COOKIE_SECURE=False"
 
   db:
     image: postgres:11
